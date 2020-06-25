@@ -246,3 +246,10 @@ $ npx moocauto                 ## Pasa los tests al fichero a entregar
 ```
 
 Se puede pasar la herramienta de autocorrección tantas veces como se desee.
+
+RUBRICA: La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
+-	10%:  Existe el repositorio my_calculator con el contenido pedido en la entrega anterior (hasta el paso 7)
+-	40%:  Existe la rama sine con el commit “sin(x) button” con el contenido y origen pedidos
+-	40%:  La integración de las ramas master y sine se ha realizado correctamente y la calculadora funciona bien.
+
+
