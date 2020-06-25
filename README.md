@@ -4,7 +4,7 @@
 
 <br/><br/><br/>
 
-# Módulo 3: Repositorios local y remoto, directorio de trabajo, commit, raw máster (principal), ramas remotas, GitHub y los comandos Git: add, checkout, diff, init, log, mv, reset, rm, status y commit - Entrega P2P: Commit
+# Módulo 4: Historia del proyecto y grafo de commit, ramas, fusión de ramas, integración de commit, avance rápido y comandos: branch, checkout, diff, log, reset, show, merge, commit y checkout - Entrega P2P: Merge
 
 ## Objetivos
  * Practicar con repositorios locales y remotos
