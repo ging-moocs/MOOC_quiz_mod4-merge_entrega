@@ -21,7 +21,6 @@ En esta práctica se parte del repositorio creado en la entrega anterior, realiz
 
 **Si ha realizado la entrega anterior, puede saltar directamente al paso 7.**
 
-
 ### Paso 1: Creación de repositorio remoto
 El primer paso a seguir es crear una cuenta en Github, si no se tiene. A continuación, creamos un nuevo repositorio con el nombre "my_calculator".
 
@@ -222,6 +221,7 @@ Para ayudar al desarrollo, se provee una herramienta de autocorrección que prue
 ```
 $ git clone https://github.com/ging-moocs/MOOC_git_mod4-merge_entrega
 $ cd MOOC_git_mod4-merge_entrega
+$ npm install
 ```
 
 A continuación guarde en un fichero llamado 'git_account' su nombre de usuario de GitHub
