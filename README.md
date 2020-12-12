@@ -14,7 +14,7 @@
 
 ## Descripción de la práctica
 
-En esta práctica se parte del repositorio creado en la entrega anterior, realizando modificaciones sobre el mismo para comenzar a trabajar con ramas de git. Crearemos una rama nueva con un desarrollo paralelo y la integraremos con la rama master resolviendo cualquier conflicto que haya podido surgir.
+En esta práctica se parte del repositorio creado en la entrega anterior, realizando modificaciones sobre el mismo para comenzar a trabajar con ramas de git. Crearemos una rama nueva con un desarrollo paralelo y la integraremos con la rama main resolviendo cualquier conflicto que haya podido surgir.
 
 ## Tareas
 
@@ -63,7 +63,7 @@ Añadir al directorio de trabajo un fichero con el nombre "index.html". Este fic
 En la etiqueta h1 debes modificar el texto para incluir tu nombre y apellidos
 
 ### Paso 4: Registrar cambios
-A continuación, hay que registrar los ficheros en el índice y crear el primer commit en la rama master. Se recuerda que antes de crear un commit hay que probar siempre que el programa que se va a guardar funciona correctamente (en este caso, abriéndolo en el navegador web y probando que funciona la calculadora).
+A continuación, hay que registrar los ficheros en el índice y crear el primer commit en la rama main. Se recuerda que antes de crear un commit hay que probar siempre que el programa que se va a guardar funciona correctamente (en este caso, abriéndolo en el navegador web y probando que funciona la calculadora).
 
 ```
 $ git add index.html # Añadir el fichero creado
@@ -72,7 +72,7 @@ $ git log --oneline # Ver la lista de commits
 ```
 
 ## Paso 5: Crear un segundo commit
-Debe crear un segundo commit en la rama en la que está trabajando (master). 
+Debe crear un segundo commit en la rama en la que está trabajando (main). 
 El commit debe añadir a la calculadora (fichero index.html) un segundo botón (elemento HTML `<button ..>`) que eleve un número a la cuarta potencia (x^4) invocando una función (power_4 ()) que calcula x^4 al hacer click en él.
 
 ```
@@ -116,7 +116,7 @@ $ git commit -m "x^4 button"
 Para finalizar, hay que subir el repositorio local al repositorio remoto creado en Github inicialmente.
 
 ```
-$ git push origin master
+$ git push origin main
 ```
 
 ### Paso 7: Crear nueva rama
@@ -170,26 +170,26 @@ $ git commit -m "sin(x) button"
 ```
 
 
-### Paso 9: Integrar la rama "master" en "sine"
+### Paso 9: Integrar la rama "main" en "sine"
 
-Ahora se debe integrar la rama "master" en la rama "sine", para crear una calculadora con tres botones: x^3, x^4 y sin(x).
+Ahora se debe integrar la rama "main" en la rama "sine", para crear una calculadora con tres botones: x^3, x^4 y sin(x).
 
 ```
-$ git merge master
+$ git merge main
 ```
 
 La integración tiene conflictos, que se deben resolver con el editor. Una vez resueltos y después de comprobar que el programa integrado funciona correctamente, se debe finalizar la integración (merge) creando el commit de integración.
 
 ```
 $ git add index.html
-$ git merge --continue # o git commit -m "Integrate master"
+$ git merge --continue # o git commit -m "Integrate main"
 ```
 
-### Paso 10: Integrar la rama "sine" en "master"
+### Paso 10: Integrar la rama "sine" en "main"
 
 
-Ahora que la rama "sine" está correcta y contiene todas las funcionalidades, podemos integrar los cambios en la rama principal "master",
-Para ello, nos cambiamos a la rama "master" y nos traemos los cambios de "sine".
+Ahora que la rama "sine" está correcta y contiene todas las funcionalidades, podemos integrar los cambios en la rama principal "main",
+Para ello, nos cambiamos a la rama "main" y nos traemos los cambios de "sine".
 
 ```
 git merge sine
@@ -266,6 +266,6 @@ Dado que es un curso para principiantes, ante la duda les pedimos que sean benev
 **RUBRICA:** La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
 * **10%:**  Existe el repositorio my_calculator con el contenido pedido en la entrega anterior (hasta el paso 7)
 * **40%:**  Existe la rama sine con el commit “sin(x) button” con el contenido y origen pedidos
-* **40%:**  La integración de las ramas master y sine se ha realizado correctamente y la calculadora funciona bien.
+* **40%:**  La integración de las ramas main y sine se ha realizado correctamente y la calculadora funciona bien.
 
 
