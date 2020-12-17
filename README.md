@@ -266,6 +266,6 @@ Dado que es un curso para principiantes, ante la duda les pedimos que sean benev
 **RUBRICA:** La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
 * **10%:**  Existe el repositorio my_calculator con el contenido pedido en la entrega anterior (hasta el paso 7)
 * **40%:**  Existe la rama sine con el commit “sin(x) button” con el contenido y origen pedidos
-* **40%:**  La integración de las ramas main y sine se ha realizado correctamente y la calculadora funciona bien.
+* **50%:**  La integración de las ramas main y sine se ha realizado correctamente y la calculadora funciona bien.
 
 
