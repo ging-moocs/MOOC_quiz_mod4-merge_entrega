@@ -191,7 +191,13 @@ $ git merge --continue # o git commit -m "Integrate main"
 
 
 Ahora que la rama "sine" está correcta y contiene todas las funcionalidades, podemos integrar los cambios en la rama principal "main",
-Para ello, nos cambiamos a la rama "main" y nos traemos los cambios de "sine".
+Para ello, nos cambiamos a la rama "main" 
+
+```
+git checkout main
+```
+
+y nos traemos los cambios de "sine".
 
 ```
 git merge sine
