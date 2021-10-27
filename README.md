@@ -33,7 +33,7 @@ $ cd my_calculator
 ```
 y le asignamos el repositorio remoto que acabamos de crear
 ```
-$ git remote add origin https://github.com/<mi usuario de github>/my_calculator.git
+$ git remote add origin git@github.com/<mi usuario de github>/my_calculator.git
 ```
 
 ### Paso 3: Añadir ficheros al repositorio
@@ -268,8 +268,7 @@ $ npx autocorector --upload
 
 La herramienta de autocorrección preguntará por el correo del alumno y el token de MiriadaX. En [este enlace](https://docs.google.com/presentation/d/e/2PACX-1vRYA9npW0Xg_c6_SWg2jAU7L2ti83-GY1VYKTzM1U5AgsW-0BC3xbwi__gsrsZ50Md0ja2HyadNzEPn/pub?start=false&loop=false&delayms=5000) se proveen instrucciones para encontrar dicho token.
 
-
-**RUBRICA**: La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
--	**20%:**  Existe el repositorio my_calculator 
--	**40%:**  El primer commit de la rama main es “x^3 button” y contiene lo pedido
--	**40%:**  El segundo commit de la rama main es “x^4 button” y contiene lo pedido
+**RUBRICA:** La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
+* **10%:**  Existe el repositorio my_calculator con el contenido pedido en la entrega anterior (hasta el paso 7)
+* **40%:**  Existe la rama sine con el commit “sin(x) button” con el contenido y origen pedidos
+* **50%:**  La integración de las ramas main y sine se ha realizado correctamente y la calculadora funciona bien.
