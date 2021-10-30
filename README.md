@@ -6,7 +6,7 @@
 
 # Módulo 4: Historia del proyecto y grafo de commit, ramas, fusión de ramas, integración de commit, avance rápido y comandos: branch, checkout, diff, log, reset, show, merge, commit y checkout - Entrega P2P: Merge
 
-Versión: 27 de octubre de 2021
+Versión: 30 de octubre de 2021
 
 ## Objetivos
  * Practicar con repositorios locales y remotos
@@ -33,13 +33,13 @@ $ cd my_calculator
 ```
 y le asignamos el repositorio remoto que acabamos de crear
 ```
-$ git remote add origin git@github.com/<mi usuario de github>/my_calculator.git
+$ git remote add origin git@github.com:<mi usuario de github>/my_calculator.git
 ```
 
 ### Paso 3: Añadir ficheros al repositorio
 
 Añadir al directorio de trabajo un fichero con el nombre "index.html". Este fichero contendrá una calculadora web con un botón para calcular el cubo del número introducido:
-```
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -253,7 +253,7 @@ $ npx autocorector             ## Pasa los tests al fichero a entregar
 ... (resultado de los tests)
 ```
 
-Se puede pasar la herramienta de autoorrección tantas veces como se desee sin ninguna repercusión en la calificación.
+Se puede pasar la herramienta de autocorrección tantas veces como se desee sin ninguna repercusión en la calificación.
 
 ## Instrucciones para la Entrega y Evaluación.
 
