@@ -4,7 +4,7 @@
 
 <br/><br/><br/>
 
-# Módulo 4: Historia del proyecto y grafo de commit, ramas, fusión de ramas, integración de commit, avance rápido y comandos: branch, checkout, diff, log, reset, show, merge, commit y checkout - Entrega P2P: Merge
+# Módulo 4: Historia del proyecto - Entrega P2P: Merge
 
 Versión: 30 de octubre de 2021
 
@@ -232,7 +232,7 @@ $ cd MOOC_git_mod4-merge_entrega
 $ npm install
 ```
 
-A continuación guarde en un fichero llamado 'git_account' su nombre de usuario de GitHub
+A continuación, en el directorio `MOOC_git_mod4-merge_entrega` guarde en un fichero llamado 'git_account' su nombre de usuario de GitHub
 ```
 echo "mi_nombre_de_usuario_en_github" >> git_account
 ```
