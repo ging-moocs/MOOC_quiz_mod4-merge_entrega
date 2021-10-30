@@ -1,12 +1,6 @@
-/**
- * Checker Script for mooc_git-entrega1_merge
- */
-
-
 // IMPORTS
 const git = require('simple-git/promise');
 const Utils = require("./testutils");
-const to = require("./to");
 const path = require('path');
 const fs = require('fs-extra');
 
@@ -47,14 +41,14 @@ describe('Merge', function () {
     it("(Prechecks) Buscando la rama main", async function () {
         this.score = 0.2;
         this.msg_ok = `Se ha encontrado la rama main ${REPO_URL}`;
-        [_, _] = await to(fs.remove(PATH_REPO));
-        [error_repo, _] = await to(mygit.clone(REPO_URL));
+        [_, _] = await Utils.to(fs.remove(PATH_REPO));
+        [error_repo, _] = await Utils.to(mygit.clone(REPO_URL));
         if (error_repo) {
             this.msg_err = `No se encuentra rama main en ${REPO_URL}`;
             error_critical = this.msg_err;
             should.not.exist(error_critical);
         }
-        await to(mygit.cwd(PATH_REPO));
+        await Utils.to(mygit.cwd(PATH_REPO));
         should.not.exist(error_repo);
     });
 
@@ -64,7 +58,7 @@ describe('Merge', function () {
             this.msg_err = error_critical;
             should.not.exist(error_critical);
         } else {
-            [error_log, log] = await to(mygit.log());
+            [error_log, log] = await Utils.to(mygit.log());
             if (error_log) {
                 this.msg_err = `Error al leer los logs en ${PATH_REPO}`;
                 error_critical = this.msg_err;
@@ -83,7 +77,7 @@ describe('Merge', function () {
                 should.not.exist(error_critical);
 
             }
-            [error_commit, output] = await to(mygit.show([commit_1_main, '--name-only', '--pretty=format:']));
+            [error_commit, output] = await Utils.to(mygit.show([commit_1_main, '--name-only', '--pretty=format:']));
             if (error_commit) {
                 this.msg_err = `Error al leer el commit ${commit_1_main} de la rama main`;
                 error_critical = this.msg_err;
@@ -119,7 +113,7 @@ describe('Merge', function () {
             this.msg_ok = `Se ha encontrado el fichero '${expected}'  en el primer commit del la rama main ${commit_2_main}`;
             this.msg_err = `El fichero '${expected}' no se encuentra en el primer commit de la rama main ${commit_2_main}`;
 
-            [error_show, output] = await to(mygit.show([commit_2_main]));
+            [error_show, output] = await Utils.to(mygit.show([commit_2_main]));
             if (error_show){
                 this.msg_err = `Error al leer el commit ${commit_2_main} de la rama main`;
                 error_critical = this.msg_err;
@@ -139,7 +133,7 @@ describe('Merge', function () {
             let output;
             this.msg_ok = `Se ha encontrado '${expected}' en la rama main ${commit_2_main}`;
             this.msg_err = `No se ha encontrado'${expected}' en la rama main ${commit_2_main}`;
-            [err_show, output] = await to(mygit.show([commit_2_main]));
+            [err_show, output] = await Utils.to(mygit.show([commit_2_main]));
 
             Utils.search(expected, output).should.be.equal(true);
         }
@@ -155,7 +149,7 @@ describe('Merge', function () {
         } else {
             let output;
             this.msg_ok = `Encontrada la rama 'sine'`;
-            [error_branch, branches] = await to(mygit.branch());
+            [error_branch, branches] = await Utils.to(mygit.branch());
             if (error_branch) {
                 this.msg_err = `Error al leer las ramas ${PATH_REPO}`;
                 error_critical = this.msg_err;
@@ -200,7 +194,7 @@ describe('Merge', function () {
             let output;
             this.msg_ok = `Se ha encontrado '${expected}' en la rama main ${commit_head_sine}`;
             this.msg_err = `No se ha encontrado '${expected}' en la rama main ${commit_head_sine}`;
-            [err_show, output] = await to(mygit.show([commit_head_sine]));
+            [err_show, output] = await Utils.to(mygit.show([commit_head_sine]));
             Utils.search(expected, output).should.be.equal(true);
         }
     });
