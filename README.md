@@ -5,7 +5,7 @@
 
 # Módulo 4: Historia del proyecto - Entrega P2P: Merge
 
-Versión: 30 de septiembre de 2022
+Versión: 28 de enero de 2024
 
 ## Objetivos
  * Practicar con repositorios locales y remotos
